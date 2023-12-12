@@ -16,7 +16,8 @@ public class Page2Controller {
     private AnchorPane ap;
 
     @FXML
-    private BorderPane bp;
+    private BorderPane bord;
+
     @FXML
     private StackPane stp;
 
@@ -26,12 +27,6 @@ public class Page2Controller {
 
     @FXML
     protected void page1() {
-
-        a.setAlertType(Alert.AlertType.CONFIRMATION);
-
-        // show the dialog
-        a.show();
-        System.out.println("HELLLLLLLLO");
         loadPage("page1");
 
     }
@@ -52,13 +47,14 @@ public class Page2Controller {
 
     @FXML
     protected void loadPage(String page)  {
+
         try {
 
             System.out.println("went into loadPage");
 
             Parent root = FXMLLoader.load(getClass().getResource(page+".fxml"));
-            bp.setCenter(root);
-            bp.setLeft(root);
+            bord.setCenter(root);
+
             System.out.println("FINISHED THE TASKS");
 
         }
