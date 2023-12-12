@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="TOP_CENTER" prefHeight="482.0" prefWidth="689.0" spacing="20.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.journeywiseguijaxafx.Page2Controller">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <BorderPane prefHeight="442.0" prefWidth="670.0">
+         <top>
+            <Pane prefHeight="56.0" prefWidth="650.0" styleClass="pane-style" stylesheets="@../../../assets/style.css" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="54.0" fitWidth="122.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/JourneyWise_Adventures-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="offre_voyage" layoutX="96.0" layoutY="8.0" mnemonicParsing="false" onAction="#page1" prefHeight="40.0" prefWidth="122.0" styleClass="button-style" stylesheets="@../../../assets/style.css" text="Offre Voyage">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="238.0" layoutY="8.0" mnemonicParsing="false" onAction="#page2" prefHeight="35.0" prefWidth="96.0" styleClass="button-style" stylesheets="@../../../assets/style.css" text="Réservation">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="354.0" layoutY="8.0" mnemonicParsing="false" onAction="#page3" prefHeight="35.0" prefWidth="96.0" styleClass="button-style" stylesheets="@../../../assets/style.css" text="Journaux">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="468.0" layoutY="8.0" mnemonicParsing="false" onAction="#page4" prefHeight="40.0" prefWidth="114.0" styleClass="button-style" stylesheets="@../../../assets/style.css" text="Réclamation">
+                     <font>
+                        <Font name="Andalus" size="15.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+         </bottom>
+         <center>
+            <StackPane fx:id="pb" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane fx:id="anchor" prefHeight="200.0" prefWidth="200.0" />
+               </children></StackPane>
+         </center>
+      </BorderPane>
+   </children>
+</VBox>
